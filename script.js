@@ -384,7 +384,7 @@ function update_progress() {
     let progress_percentage = progress + "%";
     progress_fill_style.width = progress_percentage;
     if (total_habits() + total_tasks() === 0) {
-        document.getElementById("prog").innerHTML = `Add habits to activate progress bar!🚀`
+        document.getElementById("prog").innerHTML = `Add habits or tasks to activate progress bar!🚀`
     }
     else {
         document.getElementById("prog").innerHTML = `Today's overall progress - ${Math.round(calculate_progress())}%`
