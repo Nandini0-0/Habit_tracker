@@ -13,6 +13,7 @@ body{
 }
 
 .daily-progress{
+    width : auto;
     height: 12px;
     border: thin solid;
     background-color: whitesmoke;
@@ -81,6 +82,7 @@ body{
     padding: 0px 5px 5px 5px;
 }
 button{
+    width: 100%;
     background:white;
     color:black;
     border:thin dotted gray;
@@ -95,6 +97,9 @@ input{
     padding:10px 12px;
     border-radius:8px;
     border:1px solid #d1d5db;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
 .edit-btn{
     margin-left: auto;
@@ -171,6 +176,11 @@ input[type="checkbox"]:checked::after{
 
 .column{
     flex: 1;
-    display: flex;
-    flex-direction: column;
+    min-width: 0;
+}
+
+@media (max-width: 700px){
+    .container_hab{
+        flex-direction: column;
+    }
 }
