@@ -14,6 +14,9 @@ class task_obj {
         this.task_isChecked = selector_class.checked;
     }
 }
+
+
+
 const todays_habits = document.querySelector(".regular-habits");
 //1.
 const todays_tasks = document.querySelector(".todays-tasks");
@@ -384,7 +387,7 @@ function update_progress() {
     let progress_percentage = progress + "%";
     progress_fill_style.width = progress_percentage;
     if (total_habits() + total_tasks() === 0) {
-        document.getElementById("prog").innerHTML = `Add habits or tasks to activate progress bar!🚀`
+        document.getElementById("prog").innerHTML = `Add habits to activate progress bar!🚀`
     }
     else {
         document.getElementById("prog").innerHTML = `Today's overall progress - ${Math.round(calculate_progress())}%`
@@ -410,5 +413,13 @@ else{
     function edit_habit(){
 
     }
-
+if(!isLoading){
+     if(total_habits() == 0){
+    document.querySelector(".regular-habits").style.display = 'none'
+    }
+    if(total_tasks() == 0){
+        document.querySelector(".todays-tasks").style.display = 'none'
+    }
+}
+   
     
