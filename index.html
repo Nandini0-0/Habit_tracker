@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Habit tracker</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Habit tracker</h1>
+
+            <h3>Build consistency every day</h3>
+        </section>
+
+
+        <section class="todays-progress">
+            <h2 id="prog">
+            </h2>
+            <div class="daily-progress">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="message"></div>
+            <h3 class="habit_prog"></h3>
+            <h3 class="task_prog"></h3>
+        </section>
+
+        <div class="container_hab">
+            <div class="column">
+                <section class="add-habit">
+                    <h2>➕Add a new habit</h2>
+                    <input type="text" placeholder="Enter a habit">
+                    <button id="add_habit_button">Add!</button>
+                </section>
+                <section class="regular-habits">
+                    <h2 class="heading">✨Regular habits</h2>
+                </section>
+            </div>
+            <div class="column">
+                <section class="add-task">
+                    <h2>➕Add a new task</h2>
+                    <input type="text" placeholder="Enter a task">
+                    <button id="add_task_button">Add!</button>
+                </section>
+                <section class="todays-tasks">
+                    <h2 class="heading">🗓️Today's tasks</h2>
+                </section>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>>
